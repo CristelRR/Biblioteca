@@ -1,0 +1,21 @@
+nav{
+    background-color: #87CEFA;
+    height: 95px;
+    clear: both;
+}
+
+img{
+    padding: 1%;
+    position: relative;
+    left: 50px;
+}
+
+h1{
+    position: relative;
+    top:-80px;
+    font-size: 45px;
+    text-align: center;
+}
+
+
+
