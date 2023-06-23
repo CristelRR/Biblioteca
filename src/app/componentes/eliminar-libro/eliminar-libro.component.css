@@ -1,0 +1,24 @@
+.lateral{
+    background: #ebebeb;
+    text-align: center;
+    color: #00a786;
+    font-size: 25px;
+    height: 1000px;
+}
+
+.fa-solid{
+    margin: 20px 20px;
+}
+
+
+.col-form-label{
+    margin: 10px;
+}
+
+h3{
+    position: relative;
+    text-align: left;
+    margin: 15px 15px;
+    color: #00a786;
+
+}

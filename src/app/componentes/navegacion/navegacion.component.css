@@ -1,20 +1,22 @@
 nav{
     background-color: #87CEFA;
-    height: 95px;
+    height: 65px;
+    position:relative;
     clear: both;
 }
 
 img{
-    padding: 1%;
-    position: relative;
-    left: 50px;
+    margin: 9px;
+    position: absolute;
+    left: 0%;
+    width: 50px;
 }
 
-h1{
-    position: relative;
-    top:-80px;
-    font-size: 45px;
-    text-align: center;
+h3{
+    margin: 15px 15px;
+    position: absolute;
+    font-size: 30px;
+    left: 5%;
 }
 
 
