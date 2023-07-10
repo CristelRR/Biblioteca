@@ -1,1 +1,130 @@
-<p>eliminar-libro works!</p>
+<div class="container-fluid">
+    <div class="row barra"> <!-- BARRA DE LA INSTITUCION -->
+        <app-navegacion></app-navegacion>
+    </div>  <!-- CIERRA BARRA DE LA INSTITUCION -->
+    <div class="row"> <!-- CUERPO -->
+        <div class="col-sm-2"> <!-- MENÚ LATERAL-->
+            <div class="row">
+                <app-menu-lateral></app-menu-lateral>
+            </div>
+        </div> <!-- CIERRA MENÚ LATERAL-->
+        <div class="col-sm-10"> <!-- CONTENIDO-->
+            <div class="row"> <!-- BUSCAR LIBRO -->
+                <div class="col-sm-8">
+                    <div class="row align-items-center">
+                        <div class="col-sm-3">
+                            <label for="id-libro" class="col-form-label">ID Libro:</label>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" id="id-libro" class="form-control" placeholder="Ingresa ID Libro">
+                        </div>
+                        <div class="col-sm-3">
+                            <button type="button" class="btn btn-warning">
+                                <i class="fa-solid fa-floppy-disk" style="color: #1f4251;"></i>
+                                 Buscar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- CIERRA BUSCAR LIBRO -->
+            <hr>
+            <div class="row"> <!-- DATOS LIBRO-->
+                <div class="col-sm-8">
+                    <div class="row align-items-center">
+                        <div class="col-sm-3">
+                        <label for="id-libro" class="col-form-label">ID Libro:</label>
+                        </div>
+                        <div class="col-sm-9">
+                        <input type="text" id="id-libro" class="form-control" placeholder="Ingresa ID Libro">
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-sm-3">
+                        <label for="titulo" class="col-form-label">Título:</label>
+                        </div>
+                        <div class="col-sm-9">
+                        <input type="text" id="titulo" class="form-control" placeholder="Ingresa título">
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-sm-3">
+                        <label for="autor" class="col-form-label">Autor:</label>
+                        </div>
+                        <div class="col-sm-9">
+                        <input type="text" id="autor" class="form-control" placeholder="Ingresa autor">
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-sm-3">
+                        <label for="categoria" class="col-form-label">Categoría:</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <select class="form-select" id="categoria" placeholder="Selecciona categoría">
+                                <option selected >Selecciona categoría...</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>                        
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-sm-3">
+                        <label for="editorial" class="col-form-label">Editorial:</label>
+                        </div>
+                        <div class="col-sm-9">
+                        <input type="text" id="editorial" class="form-control" placeholder="Ingresa editorial">
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-sm-3">
+                        <label for="fecha-publi" class="col-form-label">Fecha publicación:</label>
+                        </div>
+                        <div class="col-sm-9">
+                        <input type="date" id="fecha-publi" class="form-control" placeholder="Ingresa fecha publicación">
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-sm-3">
+                        <label for="volumen" class="col-form-label">Volumen:</label>
+                        </div>
+                        <div class="col-sm-9">
+                        <input type="number" id="volumen" class="form-control" placeholder="Ingresa volumen">
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-sm-3">
+                        <label for="edicion" class="col-form-label">Edición:</label>
+                        </div>
+                        <div class="col-sm-9">
+                        <input type="number" id="edicion" class="form-control" placeholder="Ingresa edición">
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-sm-3">
+                        <label for="lugar-publi" class="col-form-label">Lugar publicación:</label>
+                        </div>
+                        <div class="col-sm-9">
+                        <input type="text" id="lugar-publi" class="form-control" placeholder="Ingresa lugar publicación">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="row">
+                        <img src="..." class="img-thumbnail" alt="...">
+                    </div>
+                    <div class="row">
+                        <i class="fa-solid fa-file"></i>            
+                        <input class="form-control" type="file" id="formFile">
+                    </div> 
+                </div>
+            </div> <!-- CIERRA DATOS LIBRO-->
+            <div class="row"> <!-- BOTÓN GUARDAR-->                
+                <button type="button" class="btn btn-warning" style="width: 350px;">
+                    <i class="fa-solid fa-floppy-disk" style="color: #1f4251;"></i>
+                    Guardar
+                </button>
+            </div>
+        </div>  <!-- CIERRA CONTENIDO-->
+    </div>
+    
+</div>

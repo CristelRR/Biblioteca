@@ -7,7 +7,7 @@
 }
 
 .fa-solid{
-    margin: 20px 20px;
+    margin: 5px
 }
 
 
@@ -21,4 +21,18 @@ h3{
     margin: 15px 15px;
     color: #00a786;
 
+}
+
+.buscar{
+    border: 1px solid black;
+}
+
+/*MENU LATERAL*/
+.nav-pills li a:hover{
+    background-color: blue;
+}
+
+.al{
+    /*background: #20252e;*/
+    background: #87CEFA;
 }

@@ -1,14 +1,5 @@
-.lateral{
-    background: #ebebeb;
-    text-align: center;
-    color: #00a786;
-    font-size: 25px;
-    height: 1000px;
-    padding: 30px 40px;
-}
-
 .fa-solid{
-    margin: 20px 50px;
+    margin: 5px
 }
 
 
@@ -16,4 +7,27 @@
     margin: 10px;
 }
 
+h3{
+    position: relative;
+    text-align: left;
+    margin:8px 8px 13px 5px;
+    color: #00a786;
 
+}
+
+.barra{
+    /*background: #20252e;*/
+    background: #87CEFA;
+}
+
+/*MENU LATERAL*/
+.nav-pills li a:hover{
+    background-color: blue;
+}
+
+.btn-warning{
+    position: relative;
+    width: 150px;
+    margin: 10px;
+    left: 340px;
+}
