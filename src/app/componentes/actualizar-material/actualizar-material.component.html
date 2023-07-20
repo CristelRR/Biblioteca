@@ -8,24 +8,42 @@
         </div> <!-- CIERRA MENÚ LATERAL-->
         <div class="col-sm-10"> <!-- CONTENIDO-->
             <div class="row aling-items-center ti">
-                <p>Eliminar libro</p>
+                <p>Actualizar material</p>
             </div>
             <div class="row align-items-center"> <!-- DATOS PARA BUSCAR LIBRO-->
                 <div class="col-sm-8 tdatos">
                     <div class="row align-items-center">
                         <div class="col-sm-3">
-                        <label for="id-libro" class="col-form-label">ID Libro:</label>
+                        <label for="id-material" class="col-form-label">ID material:</label>
                         </div>
                         <div class="col-sm-9">
-                        <input type="text" id="id-libro" class="form-control" placeholder="Ingresa ID Libro">
+                        <input type="text" id="id-material" class="form-control" placeholder="Ingresa ID material">
                         </div>
                     </div>
                     <div class="row align-items-center">
                         <div class="col-sm-3">
-                        <label for="titulo" class="col-form-label">Título:</label>
+                            <label for="titulo" class="col-form-label">Título:</label>
                         </div>
                         <div class="col-sm-9">
-                        <input type="text" id="titulo" class="form-control" placeholder="Ingresa título">
+                            <input type="text" id="titulo" class="form-control" placeholder="Ingresa título">
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-sm-3">
+                            <label for="tipo" class="col-form-label">Tipo:</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <select class="form-select" id="categoria" placeholder="Selecciona tipo">
+                                <option selected >Selecciona tipo...</option>
+                                <option value="1">Revistas</option>
+                                <option value="2">Enciclopedias</option>
+                                <option value="3">Diccionarios</option>
+                                <option value="4">Videos CD</option>
+                                <option value="5">Videos DVD</option>
+                                <option value="6">Cintas VHC</option>
+                                <option value="8">Tesis en disco</option>
+                                <option value="9">Tesis impresas</option>
+                            </select>                        
                         </div>
                     </div>
                 </div>
@@ -42,18 +60,28 @@
                 <div class="col-sm-11 tdatos">
                     <div class="row align-items-center">
                         <div class="col-sm-3">
-                        <label for="id-libro" class="col-form-label">ID Libro:</label>
-                        </div>
-                        <div class="col-sm-9">
-                        <input type="text" id="id-libro" class="form-control" placeholder="Ingresa ID Libro">
-                        </div>
-                    </div>
-                    <div class="row align-items-center">
-                        <div class="col-sm-3">
                         <label for="titulo" class="col-form-label">Título:</label>
                         </div>
                         <div class="col-sm-9">
                         <input type="text" id="titulo" class="form-control" placeholder="Ingresa título">
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-sm-3">
+                            <label for="tipo" class="col-form-label">Tipo:</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <select class="form-select" id="categoria" placeholder="Selecciona tipo">
+                                <option selected >Selecciona tipo...</option>
+                                <option value="1">Revistas</option>
+                                <option value="2">Enciclopedias</option>
+                                <option value="3">Diccionarios</option>
+                                <option value="4">Videos CD</option>
+                                <option value="5">Videos DVD</option>
+                                <option value="6">Cintas VHC</option>
+                                <option value="8">Tesis en disco</option>
+                                <option value="9">Tesis impresas</option>
+                            </select>                        
                         </div>
                     </div>
                     <div class="row align-items-center">
@@ -132,7 +160,7 @@
                         </div>
                         <div class="col-sm-9">
                             <div class="row img">
-                                <img src="#" width="400px" height="500px" />
+                                <img src="#" width="400px" height="500px">
                             </div>
                             <div class="row">
                                 <div class="input-group mb-3">
@@ -140,17 +168,18 @@
                                     <label class="input-group-text" for="inputGroupFile02">
                                         <i class="fa-solid fa-upload"></i>
                                     </label>
-                                  </div> 
+                                  </div>
                             </div> 
                         </div>
                     </div>
                     <div class="row"> <!-- BOTÓN GUARDAR-->                
                         <button type="button" class="btn btn-warning">
-                            <i class="fa-solid fa-trash" style="color: #1f4251;"></i> Eliminar
+                            <i class="fa-solid fa-floppy-disk" style="color: #1f4251;"></i> Guardar
                         </button>
                     </div>
                 </div>
             </div> <!-- CIERRA DATOS LIBRO-->
         </div>  <!-- CIERRA CONTENIDO-->
     </div>
+    
 </div>

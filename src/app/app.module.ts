@@ -10,9 +10,18 @@ import { RegistrarLibroComponent } from './componentes/registrar-libro/registrar
 import { ActualizarLibroComponent } from './componentes/actualizar-libro/actualizar-libro.component';
 import { EliminarLibroComponent } from './componentes/eliminar-libro/eliminar-libro.component';
 import { MenuLateralComponent } from './componentes/menu-lateral/menu-lateral.component';
-import { ActulizarMaterialComponent } from './componentes/actulizar-material/actulizar-material.component';
 import { EliminarMaterialComponent } from './componentes/eliminar-material/eliminar-material.component';
 import { RegistrarMaterialComponent } from './componentes/registrar-material/registrar-material.component';
+import { PrestamoLibroComponent } from './componentes/prestamo-libro/prestamo-libro.component';
+import { RegistrarUsuarioComponent } from './componentes/registrar-usuario/registrar-usuario.component';
+import { EliminarUsuarioComponent } from './componentes/eliminar-usuario/eliminar-usuario.component';
+import { ActualizarMaterialComponent } from './componentes/actualizar-material/actualizar-material.component';
+import { ActualizarUsuarioComponent } from './componentes/actualizar-usuario/actualizar-usuario.component';
+import { BuscarMaterialesComponent } from './componentes/buscar-materiales/buscar-materiales.component';
+import { BuscarLibrosComponent } from './componentes/buscar-libros/buscar-libros.component';
+import { PrestamoMaterialComponent } from './componentes/prestamo-material/prestamo-material.component';
+import { DevolucionComponent } from './componentes/devolucion/devolucion.component';
+import { PrincipalComponent } from './componentes/principal/principal.component';
 
 @NgModule({
   declarations: [
@@ -24,9 +33,18 @@ import { RegistrarMaterialComponent } from './componentes/registrar-material/reg
     ActualizarLibroComponent,
     EliminarLibroComponent,
     MenuLateralComponent,
-    ActulizarMaterialComponent,
     EliminarMaterialComponent,
-    RegistrarMaterialComponent
+    RegistrarMaterialComponent,
+    PrestamoLibroComponent,
+    RegistrarUsuarioComponent,
+    EliminarUsuarioComponent,
+    ActualizarMaterialComponent,
+    ActualizarUsuarioComponent,
+    BuscarMaterialesComponent,
+    BuscarLibrosComponent,
+    PrestamoMaterialComponent,
+    DevolucionComponent,
+    PrincipalComponent
   ],
   imports: [
     BrowserModule,

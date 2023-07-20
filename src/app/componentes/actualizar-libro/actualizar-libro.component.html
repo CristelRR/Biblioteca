@@ -1,33 +1,45 @@
 <div class="container-fluid">
-    <div class="row al"> <!-- BARRA DE LA INSTITUCION -->
-            <app-navegacion></app-navegacion>
+    <div class="row barra"> <!-- BARRA DE LA INSTITUCION -->
+        <app-navegacion></app-navegacion>
     </div>  <!-- CIERRA BARRA DE LA INSTITUCION -->
     <div class="row"> <!-- CUERPO -->
-        <div class="col-sm-2"> <!-- MENÚ LATERAL-->
+        <div class="col-sm-2 ml"> <!-- MENÚ LATERAL--> 
             <app-menu-lateral></app-menu-lateral>
         </div> <!-- CIERRA MENÚ LATERAL-->
         <div class="col-sm-10"> <!-- CONTENIDO-->
-            <div class="row"> <!-- BUSCAR LIBRO -->
-                <div class="col-sm-8">
+            <div class="row aling-items-center ti">
+                <p>Actualizar libro</p>
+            </div>
+            <div class="row align-items-center"> <!-- DATOS PARA BUSCAR LIBRO-->
+                <div class="col-sm-8 tdatos">
                     <div class="row align-items-center">
                         <div class="col-sm-3">
-                            <label for="id-libro" class="col-form-label">ID Libro:</label>
+                        <label for="id-libro" class="col-form-label">ID Libro:</label>
                         </div>
-                        <div class="col-sm-6">
-                            <input type="text" id="id-libro" class="form-control" placeholder="Ingresa ID Libro">
+                        <div class="col-sm-9">
+                        <input type="text" id="id-libro" class="form-control" placeholder="Ingresa ID Libro">
                         </div>
+                    </div>
+                    <div class="row align-items-center">
                         <div class="col-sm-3">
-                            <button type="button" class="btn btn-warning">
-                                <i class="fa-solid fa-floppy-disk" style="color: #1f4251;"></i>
-                                 Buscar
-                            </button>
+                        <label for="titulo" class="col-form-label">Título:</label>
+                        </div>
+                        <div class="col-sm-9">
+                        <input type="text" id="titulo" class="form-control" placeholder="Ingresa título">
                         </div>
                     </div>
                 </div>
-            </div> <!-- CIERRA BUSCAR LIBRO -->
+                <div class="col-sm-3 bnbuscar"> <!-- BOTÓN BUSCAR--> 
+                    <div class="row aling-items-center">
+                        <button type="button" id="buscar" class="btn btn-warning">
+                            <i class="fa-solid fa-magnifying-glass" style="color: #1f4251;"></i>  Buscar
+                        </button>
+                    </div>               
+                </div>
+            </div>
             <hr>
-            <div class="row"> <!-- DATOS LIBRO-->
-                <div class="col-sm-8">
+            <div class="row align-items-center"> <!-- DATOS LIBRO-->
+                <div class="col-sm-11 tdatos">
                     <div class="row align-items-center">
                         <div class="col-sm-3">
                         <label for="id-libro" class="col-form-label">ID Libro:</label>
@@ -59,9 +71,18 @@
                         <div class="col-sm-9">
                             <select class="form-select" id="categoria" placeholder="Selecciona categoría">
                                 <option selected >Selecciona categoría...</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
+                                <option value="1">Generalidades</option>
+                                <option value="2">Filosofía y psicología</option>
+                                <option value="3">Religión</option>
+                                <option value="4">Ciencias Sociales</option>
+                                <option value="5">Lenguas</option>
+                                <option value="6">Ciencias Básicas</option>
+                                <option value="8">Tecnologias y Ciencias Aplicadas</option>
+                                <option value="9">Literatura</option>
+                                <option value="10">Bellas Artes</option>
+                                <option value="11">Colección de consulta</option>
+                                <option value="11">Tesis</option>
+                                <option value="11">Revistas</option>
                               </select>                        
                         </div>
                     </div>
@@ -105,24 +126,31 @@
                         <input type="text" id="lugar-publi" class="form-control" placeholder="Ingresa lugar publicación">
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="row">
-                        <img src="..." class="img-thumbnail" alt="...">
+                    <div class="row align-items-center">
+                        <div class="col-sm-3">
+                        <label for="lugar-publi" class="col-form-label">Foto de referencia:</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <div class="row img">
+                                <img src="#" width="400px" height="500px">
+                            </div>
+                            <div class="row">
+                                <div class="input-group mb-3">
+                                    <input type="file" class="form-control" id="inputGroupFile02">
+                                    <label class="input-group-text" for="inputGroupFile02">
+                                        <i class="fa-solid fa-upload"></i>
+                                    </label>
+                                  </div>
+                            </div> 
+                        </div>
                     </div>
-                    <div class="row">
-                        <i class="fa-solid fa-file"></i>            
-                        <input class="form-control" type="file" id="formFile">
-                    </div> 
+                    <div class="row"> <!-- BOTÓN GUARDAR-->                
+                        <button type="button" class="btn btn-warning">
+                            <i class="fa-solid fa-floppy-disk" style="color: #1f4251;"></i> Guardar
+                        </button>
+                    </div>
                 </div>
             </div> <!-- CIERRA DATOS LIBRO-->
-            <div class="row"> <!-- BOTÓN GUARDAR-->                
-                <button type="button" class="btn btn-warning" style="width: 350px; text-align: center;">
-                    <i class="fa-solid fa-floppy-disk" style="color: #1f4251;"></i>
-                    Guardar
-                </button>
-            </div>
         </div>  <!-- CIERRA CONTENIDO-->
     </div>
-    
 </div>

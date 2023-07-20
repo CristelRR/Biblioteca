@@ -1,11 +1,3 @@
-.lateral{
-    background: #ebebeb;
-    text-align: center;
-    color: #00a786;
-    font-size: 25px;
-    height: 1000px;
-}
-
 .fa-solid{
     margin: 5px
 }
@@ -13,26 +5,51 @@
 
 .col-form-label{
     margin: 10px;
+    color: #005c3e;
+    font-weight: 500;
+}
+/*00A789*/
+.ti{
+    background: #ebebeb;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
-h3{
-    position: relative;
-    text-align: left;
-    margin: 15px 15px;
-    color: #00a786;
-
+.ti p{
+    color: #064068;
+    font-size: 25px;
+    margin: 5px 0px;
+    font-weight: 500;
 }
 
-.buscar{
-    border: 1px solid black;
-}
-
-/*MENU LATERAL*/
-.nav-pills li a:hover{
-    background-color: blue;
-}
-
-.al{
+.barra{
     /*background: #20252e;*/
     background: #87CEFA;
+}
+
+.btn-warning{
+    position: relative;
+    width: 150px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    left: 340px;
+}
+
+#buscar{
+    left: 40px;   
+}
+
+.img{
+    width: 400px;
+    height: 500px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.tdatos{
+    margin-left: 25px;
+}
+
+.ml{
+    background-color: #064068;
 }

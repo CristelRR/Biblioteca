@@ -8,7 +8,6 @@
     color: #005c3e;
     font-weight: 500;
 }
-/*#005c3e
 /*00A789*/
 .ti{
     background: #ebebeb;
@@ -36,14 +35,15 @@
     left: 340px;
 }
 
-
+#buscar{
+    left: 40px;   
+}
 
 .img{
-    width: 400px;
-    height: 500px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
+
 .tdatos{
     margin-left: 25px;
 }

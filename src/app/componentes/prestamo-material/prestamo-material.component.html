@@ -1,0 +1,165 @@
+<div class="container-fluid">
+    <div class="row barra"> <!-- BARRA DE LA INSTITUCION -->
+        <app-navegacion></app-navegacion>
+    </div>  <!-- CIERRA BARRA DE LA INSTITUCION -->
+    <div class="row"> <!-- CUERPO -->
+        <div class="col-sm-2 ml"> <!-- MENÚ LATERAL-->
+            <app-menu-lateral></app-menu-lateral>
+        </div> <!-- CIERRA MENÚ LATERAL-->
+        <div class="col-sm-10"> <!-- CONTENIDO-->
+            <div class="row aling-items-center ti">
+                <p>Registrar préstamo material</p>
+            </div>
+            <div class="row aling-items t">
+                <p>Datos del préstamo</p>
+            </div>
+            <div class="row-aling-items-center">
+                <div class="col-sm-11 tdatos"> <!--DATOS DEL PRESTAMO-->
+                    <div class="row align-items-center">
+                        <div class="col-sm-3">
+                            <label for="id-prestamo" class="col-form-label">ID Préstamo:</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <input type="text" id="id-prestamo" class="form-control" placeholder="Ingresa ID Libro">
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-sm-3">
+                        <label for="fecha-prestamo" class="col-form-label">Fecha del préstamo:</label>
+                        </div>
+                        <div class="col-sm-9">
+                        <input type="date" id="fecha-prestamo" class="form-control" placeholder="06/11/2023">
+                        </div>
+                    </div>
+                    <div class="row align-items-center"> 
+                        <div class="col-sm-3">
+                        <label for="fecha-devolucion" class="col-form-label">Fecha de devolución:</label>
+                        </div>
+                        <div class="col-sm-9">
+                        <input type="date" id="fecha-devolucion" class="form-control" placeholder="06/11/2023">
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <hr>
+            <div class="row aling-items t">
+                <p>Datos del usuario</p>
+            </div>
+            <div class="row align-items-center"> <!-- DATOS PARA BUSCAR USUARIO-->
+                <div class="col-sm-8 tdatos">
+                    <div class="row align-items-center">
+                        <div class="col-sm-3">
+                        <label for="numControl" class="col-form-label">Número de control:</label>
+                        </div>
+                        <div class="col-sm-9">
+                        <input type="text" id="numControl" class="form-control" placeholder="Ingresa número de control">
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-sm-3">
+                        <label for="nombre" class="col-form-label">Nombre:</label>
+                        </div>
+                        <div class="col-sm-9">
+                        <input type="text" id="nombre" class="form-control" placeholder="Nombre">
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-sm-3">
+                        <label for="apePat" class="col-form-label">Apellido paterno:</label>
+                        </div>
+                        <div class="col-sm-9">
+                        <input type="text" id="apePat" class="form-control" placeholder="Apellido paterno">
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-sm-3">
+                        <label for="apeMat" class="col-form-label">Apellido materno:</label>
+                        </div>
+                        <div class="col-sm-9">
+                        <input type="text" id="apeMat" class="form-control" placeholder="Apellido materno">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 bnbuscar"> <!-- BOTÓN BUSCAR--> 
+                    <div class="row aling-items-center">
+                        <button type="button" id="buscar" class="btn btn-warning">
+                            <i class="fa-solid fa-magnifying-glass" style="color: #1f4251;"></i>  Buscar
+                        </button>
+                    </div>               
+                </div>
+            </div>
+            <hr>
+            <div class="row aling-items t">
+                <p>Datos del material</p>
+            </div>
+            <div class="row align-items-center"> <!-- DATOS DEL MATERIAL-->
+                <div class="col-sm-11 tdatos">
+                    <div class="row align-items-center">
+                        <div class="col-sm-3">
+                        <label for="id-material" class="col-form-label">ID material:</label>
+                        </div>
+                        <div class="col-sm-9">
+                        <input type="text" id="id-material" class="form-control" placeholder="Ingresa ID material">
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-sm-3">
+                        <label for="titulo" class="col-form-label">Título:</label>
+                        </div>
+                        <div class="col-sm-9">
+                        <input type="text" id="titulo" class="form-control" placeholder="Ingresa título">
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-sm-3">
+                        <label for="categoria" class="col-form-label">Categoría:</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <select class="form-select" id="categoria" placeholder="Selecciona categoría">
+                                <option selected >Selecciona categoría...</option>
+                                <option value="1">Generalidades</option>
+                                <option value="2">Filosofía y psicología</option>
+                                <option value="3">Religión</option>
+                                <option value="4">Ciencias Sociales</option>
+                                <option value="5">Lenguas</option>
+                                <option value="6">Ciencias Básicas</option>
+                                <option value="8">Tecnologias y Ciencias Aplicadas</option>
+                                <option value="9">Literatura</option>
+                                <option value="10">Bellas Artes</option>
+                                <option value="11">Colección de consulta</option>
+                                <option value="11">Tesis</option>
+                                <option value="11">Revistas</option>
+                              </select>                        
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-sm-3">
+                        <label for="tipo" class="col-form-label">Tipo:</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <select class="form-select" id="tipo" placeholder="Selecciona tipo">
+                                <option selected >Selecciona tipo...</option>
+                                <option value="1">Revistas</option>
+                                <option value="2">Enciclopedias</option>
+                                <option value="3">Diccionarios</option>
+                                <option value="4">Videos CD</option>
+                                <option value="5">Videos DVD</option>
+                                <option value="6">Cintas VHC</option>
+                                <option value="8">Tesis en disco</option>
+                                <option value="9">Tesis impresas</option>
+                              </select>                        
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-sm-3">
+                        <label for="autor" class="col-form-label">Autor:</label>
+                        </div>
+                        <div class="col-sm-9">
+                        <input type="text" id="autor" class="form-control" placeholder="Ingresa autor">
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- CIERRA DATOS LIBRO-->
+        </div>  <!-- CIERRA CONTENIDO-->
+    </div>
+</div>

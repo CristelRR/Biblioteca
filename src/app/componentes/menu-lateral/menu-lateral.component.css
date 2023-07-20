@@ -2,3 +2,12 @@
     position: relative;
     height: 100vh
 }
+
+/*MENU LATERAL*/
+.nav-pills li a:hover{
+    background-color: #14259b;
+}
+
+.prin{
+    background-color: #064068;
+}

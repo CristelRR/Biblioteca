@@ -1,0 +1,132 @@
+<div class="container-fluid">
+  <div class="row barra"> <!-- BARRA DE LA INSTITUCION -->
+      <app-navegacion></app-navegacion>
+  </div>  <!-- CIERRA BARRA DE LA INSTITUCION -->
+  <div class="row"> <!-- CUERPO -->
+      <div class="col-sm-2 ml"> <!-- MENÚ LATERAL-->
+          <app-menu-lateral></app-menu-lateral>
+      </div> <!-- CIERRA MENÚ LATERAL-->
+      <div class="col-sm-10"> <!-- CONTENIDO-->
+          <div class="row aling-items-center ti">
+              <p>Eliminar Usuario</p>
+          </div>
+          <div class="row align-items-center"> <!-- DATOS PARA BUSCAR LIBRO-->
+            <div class="col-sm-8 tdatos">
+              <div class="row align-items-center">
+                <div class="col-sm-3">
+                <label for="num-control" class="col-form-label">Número de Control:</label>
+                </div>
+                <div class="col-sm-9">
+                <input type="text" id="num-control" class="form-control" placeholder="Ingresa número de control">
+                </div>
+            </div>
+            </div>
+            <div class="col-sm-3 bnbuscar"> <!-- BOTÓN BUSCAR--> 
+                <div class="row aling-items-center">
+                    <button type="button" id="buscar" class="btn btn-warning">
+                        <i class="fa-solid fa-magnifying-glass" style="color: #1f4251;"></i>  Buscar
+                    </button>
+                </div>               
+            </div>
+        </div>
+        <hr>
+          <div class="row align-items-center"> <!-- DATOS LIBRO-->
+              <div class="col-sm-11 tdatos">
+                  <div class="row align-items-center">
+                    <div class="col-sm-3">
+                    <label for="nombre" class="col-form-label">Nombre:</label>
+                    </div>
+                    <div class="col-sm-9">
+                    <input type="text" id="nombre" class="form-control" placeholder="Ingresa nombre">
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                      <div class="col-sm-3">
+                      <label for="ap-p" class="col-form-label">Apellido paterno:</label>
+                      </div>
+                      <div class="col-sm-9">
+                      <input type="text" id="ap-p" class="form-control" placeholder="Ingresa apellido paterno">
+                      </div>
+                  </div>
+                  <div class="row align-items-center">
+                      <div class="col-sm-3">
+                      <label for="ap-m" class="col-form-label">Apellido materno:</label>
+                      </div>
+                      <div class="col-sm-9">
+                      <input type="text" id="ap-m" class="form-control" placeholder="Ingresa apellido paterno">
+                      </div>
+                  </div>
+                  <div class="row align-items-center">
+                      <div class="col-sm-3">
+                      <label for="num-control" class="col-form-label">Número de Control:</label>
+                      </div>
+                      <div class="col-sm-9">
+                      <input type="text" id="num-control" class="form-control" placeholder="Ingresa número de control">
+                      </div>
+                  </div>
+                  <div class="row align-items-center">
+                    <div class="col-sm-3">
+                        <label for="tipo" class="col-form-label">Área académica:</label>
+                    </div>
+                    <div class="col-sm-9">
+                        <select class="form-select" id="categoria" placeholder="Programa académico">
+                            <option selected >Selecciona tipo...</option>
+                            <option value="1">Tecnologías de la Información y Comunicación</option>
+                            <option value="2">Enciclopedias</option>
+                            <option value="3">Diccionarios</option>
+                            <option value="4">Videos CD</option>
+                            <option value="5">Videos DVD</option>
+                            <option value="6">Cintas VHC</option>
+                            <option value="8">Tesis en disco</option>
+                            <option value="9">Tesis impresas</option>
+                        </select>                        
+                    </div>
+                  </div>
+                  <div class="row align-items-center">
+                      <div class="col-sm-3">
+                      <label for="categoria" class="col-form-label">Categoría:</label>
+                      </div>
+                      <div class="col-sm-9">
+                          <select class="form-select" id="categoria" placeholder="Selecciona categoría">
+                              <option selected >Selecciona categoría...</option>
+                              <option value="1">Generalidades</option>
+                              <option value="2">Filosofía y psicología</option>
+                              <option value="3">Religión</option>
+                              <option value="4">Ciencias Sociales</option>
+                              <option value="5">Lenguas</option>
+                              <option value="6">Ciencias Básicas</option>
+                              <option value="8">Tecnologias y Ciencias Aplicadas</option>
+                              <option value="9">Literatura</option>
+                              <option value="10">Bellas Artes</option>
+                              <option value="11">Colección de consulta</option>
+                              <option value="11">Tesis</option>
+                              <option value="11">Revistas</option>
+                            </select>                        
+                      </div>
+                  </div>
+                  <div class="row align-items-center">
+                      <div class="col-sm-3">
+                      <label for="correo" class="col-form-label">Correo Electrónico:</label>
+                      </div>
+                      <div class="col-sm-9">
+                      <input type="text" id="correo" class="form-control" placeholder="Ingresa correo electrónico">
+                      </div>
+                  </div>
+                  <div class="row align-items-center">
+                      <div class="col-sm-3">
+                      <label for="contra" class="col-form-label">Contraseña:</label>
+                      </div>
+                      <div class="col-sm-9">
+                      <input type="text" id="contra" class="form-control" placeholder="Ingresa contraseña">
+                      </div>
+                  </div>
+                  <div class="row"> <!-- BOTÓN GUARDAR-->                
+                    <button type="button" class="btn btn-warning">
+                        <i class="fa-solid fa-trash" style="color: #1f4251;"></i> Eliminar
+                    </button>
+                </div>
+              </div>
+          </div> <!-- CIERRA DATOS LIBRO-->
+      </div>  <!-- CIERRA CONTENIDO-->
+  </div>
+</div>

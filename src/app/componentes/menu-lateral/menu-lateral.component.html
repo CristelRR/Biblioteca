@@ -1,35 +1,46 @@
-<div class="row">
-        <div class="d-flex flex-column justift-content-between bg-dark min-vh-100 menu">
+<div class="row prin">
+        <div class="d-flex flex-column justift-content-between min-vh-100 menu">
             <div class="mt-4">
                 <ul class="nav nav-pills flex-column mt-2 mt-sm-0" id="menu">
+                    <!--CONSULTAR-->
+                    <li class="nav-item my-sm my-2">
+                        <a class="btn border-none outline-none text-white dropdown-toggle" type="button" id="triggertId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fa-solid fa-search"></i>
+                            <span class="ms-2 d-none d-sm-inline">Consultar</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="triggerId">
+                            <a href="/buscar-libro" class="dropdown-item">Libro</a>
+                            <a href="/buscar-material" class="dropdown-item">Material</a>
+                        </div>
+                    </li> 
                     <!--PRESTAMOS-->
                     <li class="nav-item my-sm my-2">
                         <a class="btn border-none outline-none text-white dropdown-toggle" type="button" id="triggertId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-user"></i>
+                            <i class="fa-solid fa-arrow-right-arrow-left"></i>
                             <span class="ms-2 d-none d-sm-inline">Préstamos</span>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="triggerId">
-                            <a href="#" class="dropdown-item">Libro</a>
-                            <a href="#" class="dropdown-item">Material</a>
-                            <a href="#" class="dropdown-item">Devoluciones</a>
+                            <a href="/prestamo-libro" class="dropdown-item">Libro</a>
+                            <a href="/prestamo-material" class="dropdown-item">Material</a>
+                            <a href="/devolucion" class="dropdown-item">Devoluciones</a>
                         </div>
                     </li> 
                     <!--USUARIOS-->
                     <li class="nav-item my-sm my-2">
                         <a class="btn border-none outline-none text-white dropdown-toggle" type="button" id="triggertId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-user"></i>
+                            <i class="fa fa-users"></i>
                             <span class="ms-2 d-none d-sm-inline">Usuarios</span>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="triggerId">
-                            <a href="#" class="dropdown-item">Alta</a>
-                            <a href="#" class="dropdown-item">Actualizar</a>
-                            <a href="#" class="dropdown-item">Eliminar</a>
+                            <a href="/registrar-usuario" class="dropdown-item">Alta</a>
+                            <a href="/actualizar-usuario" class="dropdown-item">Actualizar</a>
+                            <a href="/eliminar-usuario" class="dropdown-item">Eliminar</a>
                         </div>
                     </li> 
                     <!--LIBROS-->
                     <li class="nav-item my-sm my-2">
                         <a class="btn border-none outline-none text-white dropdown-toggle" type="button" id="triggertId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-user"></i>
+                            <i class="fa-solid fa-book"></i>
                             <span class="ms-2 d-none d-sm-inline">Libros</span>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="triggerId">
@@ -41,7 +52,7 @@
                     <!--MATERIAL-->
                     <li class="nav-item my-sm my-2">
                         <a class="btn border-none outline-none text-white dropdown-toggle" type="button" id="triggertId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fa fa-user"></i>
+                            <i class="fa-solid fa-compact-disc"></i>
                             <span class="ms-2 d-none d-sm-inline">Material</span>
                         </a>
                         <div class="dropdown-menu" aria-labelledby="triggerId">
@@ -65,5 +76,4 @@
                 </div>
             </div>
         </div>
-  
-</div>
+    </div>

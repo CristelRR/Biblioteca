@@ -8,34 +8,70 @@
         </div> <!-- CIERRA MENÚ LATERAL-->
         <div class="col-sm-10"> <!-- CONTENIDO-->
             <div class="row aling-items-center ti">
-                <p>Alta material</p>
+                <p>Modificar Usuario</p>
             </div>
+            <div class="row align-items-center"> <!-- DATOS PARA BUSCAR USUARIO-->
+                <div class="col-sm-8 tdatos">
+                    <div class="row align-items-center">
+                       <div class="col-sm-3">
+                            <label for="num-control" class="col-form-label">Número de Control:</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <input type="text" id="num-control" class="form-control" placeholder="Ingresa número de control">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 bnbuscar"> <!-- BOTÓN BUSCAR--> 
+                    <div class="row aling-items-center">
+                        <button type="button" id="buscar" class="btn btn-warning">
+                            <i class="fa-solid fa-magnifying-glass" style="color: #1f4251;"></i>  Buscar
+                        </button>
+                    </div>               
+                </div>
+            </div>
+            <hr>
             <div class="row align-items-center"> <!-- DATOS LIBRO-->
                 <div class="col-sm-11 tdatos">
                     <div class="row align-items-center">
                         <div class="col-sm-3">
-                        <label for="id-material" class="col-form-label">ID Material:</label>
+                            <label for="nombre" class="col-form-label">Nombre:</label>
                         </div>
                         <div class="col-sm-9">
-                        <input type="text" id="id-material" class="form-control" placeholder="Ingresa ID Libro">
+                            <input type="text" id="nombre" class="form-control" placeholder="Ingresa nombre">
                         </div>
                     </div>
                     <div class="row align-items-center">
                         <div class="col-sm-3">
-                        <label for="titulo" class="col-form-label">Título:</label>
+                            <label for="ap-p" class="col-form-label">Apellido paterno:</label>
                         </div>
                         <div class="col-sm-9">
-                        <input type="text" id="titulo" class="form-control" placeholder="Ingresa título">
+                            <input type="text" id="ap-p" class="form-control" placeholder="Ingresa apellido paterno">
                         </div>
                     </div>
                     <div class="row align-items-center">
                         <div class="col-sm-3">
-                            <label for="tipo" class="col-form-label">Tipo:</label>
+                            <label for="ap-m" class="col-form-label">Apellido materno:</label>
                         </div>
                         <div class="col-sm-9">
-                            <select class="form-select" id="categoria" placeholder="Selecciona tipo">
+                            <input type="text" id="ap-m" class="form-control" placeholder="Ingresa apellido paterno">
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-sm-3">
+                            <label for="num-control" class="col-form-label">Número de Control:</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <input type="text" id="num-control" class="form-control" placeholder="Ingresa número de control">
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-sm-3">
+                            <label for="tipo" class="col-form-label">Área académica:</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <select class="form-select" id="categoria" placeholder="Programa académico">
                                 <option selected >Selecciona tipo...</option>
-                                <option value="1">Revistas</option>
+                                <option value="1">Tecnologías de la Información y Comunicación</option>
                                 <option value="2">Enciclopedias</option>
                                 <option value="3">Diccionarios</option>
                                 <option value="4">Videos CD</option>
@@ -48,15 +84,7 @@
                     </div>
                     <div class="row align-items-center">
                         <div class="col-sm-3">
-                        <label for="autor" class="col-form-label">Autor:</label>
-                        </div>
-                        <div class="col-sm-9">
-                        <input type="text" id="autor" class="form-control" placeholder="Ingresa autor">
-                        </div>
-                    </div>
-                    <div class="row align-items-center">
-                        <div class="col-sm-3">
-                        <label for="categoria" class="col-form-label">Categoría:</label>
+                            <label for="categoria" class="col-form-label">Categoría:</label>
                         </div>
                         <div class="col-sm-9">
                             <select class="form-select" id="categoria" placeholder="Selecciona categoría">
@@ -73,65 +101,23 @@
                                 <option value="11">Colección de consulta</option>
                                 <option value="11">Tesis</option>
                                 <option value="11">Revistas</option>
-                              </select>                        
+                            </select>                        
                         </div>
                     </div>
                     <div class="row align-items-center">
                         <div class="col-sm-3">
-                        <label for="editorial" class="col-form-label">Editorial:</label>
+                            <label for="correo" class="col-form-label">Correo Electrónico:</label>
                         </div>
                         <div class="col-sm-9">
-                        <input type="text" id="editorial" class="form-control" placeholder="Ingresa editorial">
+                            <input type="text" id="correo" class="form-control" placeholder="Ingresa correo electrónico">
                         </div>
                     </div>
                     <div class="row align-items-center">
                         <div class="col-sm-3">
-                        <label for="fecha-publi" class="col-form-label">Fecha publicación:</label>
+                            <label for="contra" class="col-form-label">Contraseña:</label>
                         </div>
                         <div class="col-sm-9">
-                        <input type="date" id="fecha-publi" class="form-control" placeholder="Ingresa fecha publicación">
-                        </div>
-                    </div>
-                    <div class="row align-items-center">
-                        <div class="col-sm-3">
-                        <label for="volumen" class="col-form-label">Volumen:</label>
-                        </div>
-                        <div class="col-sm-9">
-                        <input type="number" id="volumen" class="form-control" placeholder="Ingresa volumen">
-                        </div>
-                    </div>
-                    <div class="row align-items-center">
-                        <div class="col-sm-3">
-                        <label for="edicion" class="col-form-label">Edición:</label>
-                        </div>
-                        <div class="col-sm-9">
-                        <input type="number" id="edicion" class="form-control" placeholder="Ingresa edición">
-                        </div>
-                    </div>
-                    <div class="row align-items-center">
-                        <div class="col-sm-3">
-                        <label for="lugar-publi" class="col-form-label">Lugar publicación:</label>
-                        </div>
-                        <div class="col-sm-9">
-                        <input type="text" id="lugar-publi" class="form-control" placeholder="Ingresa lugar publicación">
-                        </div>
-                    </div>
-                    <div class="row align-items-center">
-                        <div class="col-sm-3">
-                        <label for="lugar-publi" class="col-form-label">Foto de referencia:</label>
-                        </div>
-                        <div class="col-sm-9">
-                            <div class="row img">
-                                <img src="#" width="400px" height="500px" />
-                            </div>
-                            <div class="row">
-                                <div class="input-group mb-3">
-                                    <input type="file" class="form-control" id="inputGroupFile02">
-                                    <label class="input-group-text" for="inputGroupFile02">
-                                        <i class="fa-solid fa-upload"></i>
-                                    </label>
-                                  </div>
-                            </div> 
+                            <input type="text" id="contra" class="form-control" placeholder="Ingresa contraseña">
                         </div>
                     </div>
                     <div class="row"> <!-- BOTÓN GUARDAR-->                
@@ -143,5 +129,4 @@
             </div> <!-- CIERRA DATOS LIBRO-->
         </div>  <!-- CIERRA CONTENIDO-->
     </div>
-    
 </div>

@@ -8,24 +8,51 @@
         </div> <!-- CIERRA MENÚ LATERAL-->
         <div class="col-sm-10"> <!-- CONTENIDO-->
             <div class="row aling-items-center ti">
-                <p>Eliminar libro</p>
+                <p>Registrar préstamo libro</p>
             </div>
-            <div class="row align-items-center"> <!-- DATOS PARA BUSCAR LIBRO-->
-                <div class="col-sm-8 tdatos">
+            <div class="row aling-items t">
+                <p>Datos del préstamo</p>
+            </div>
+            <div class="row-aling-items-center">
+                <div class="col-sm-11 tdatos"> <!--DATOS DEL PRESTAMO-->
                     <div class="row align-items-center">
                         <div class="col-sm-3">
-                        <label for="id-libro" class="col-form-label">ID Libro:</label>
+                            <label for="id-prestamo" class="col-form-label">ID Préstamo:</label>
                         </div>
                         <div class="col-sm-9">
-                        <input type="text" id="id-libro" class="form-control" placeholder="Ingresa ID Libro">
+                            <input type="text" id="id-prestamo" class="form-control" placeholder="Ingresa ID Libro">
                         </div>
                     </div>
                     <div class="row align-items-center">
                         <div class="col-sm-3">
-                        <label for="titulo" class="col-form-label">Título:</label>
+                        <label for="fecha-prestamo" class="col-form-label">Fecha del préstamo:</label>
                         </div>
                         <div class="col-sm-9">
-                        <input type="text" id="titulo" class="form-control" placeholder="Ingresa título">
+                        <input type="date" id="fecha-prestamo" class="form-control" placeholder="06/11/2023">
+                        </div>
+                    </div>
+                    <div class="row align-items-center"> 
+                        <div class="col-sm-3">
+                        <label for="fecha-devolucion" class="col-form-label">Fecha de devolución:</label>
+                        </div>
+                        <div class="col-sm-9">
+                        <input type="date" id="fecha-devolucion" class="form-control" placeholder="06/11/2023">
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <hr>
+            <div class="row aling-items t">
+                <p>Datos del usuario</p>
+            </div>
+            <div class="row align-items-center"> <!-- DATOS PARA BUSCAR USUARIO-->
+                <div class="col-sm-8 tdatos">
+                    <div class="row align-items-center">
+                       <div class="col-sm-3">
+                            <label for="num-control" class="col-form-label">Número de Control:</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <input type="text" id="num-control" class="form-control" placeholder="Ingresa número de control">
                         </div>
                     </div>
                 </div>
@@ -37,9 +64,40 @@
                     </div>               
                 </div>
             </div>
-            <hr>
-            <div class="row align-items-center"> <!-- DATOS LIBRO-->
+            <div class="row align-items-center"> <!-- DATOS DEL USUARIO-->
                 <div class="col-sm-11 tdatos">
+                    <div class="row align-items-center">
+                        <div class="col-sm-3">
+                            <label for="nombre" class="col-form-label">Nombre:</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <input type="text" id="nombre" class="form-control" placeholder="Ingresa nombre">
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-sm-3">
+                            <label for="ap-p" class="col-form-label">Apellido paterno:</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <input type="text" id="ap-p" class="form-control" placeholder="Ingresa apellido paterno">
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-sm-3">
+                            <label for="ap-m" class="col-form-label">Apellido materno:</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <input type="text" id="ap-m" class="form-control" placeholder="Ingresa apellido paterno">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row aling-items t">
+                <p>Datos del libro</p>
+            </div>
+            <div class="row align-items-center"> <!-- DATOS PARA BUSCAR LIBRO-->
+                <div class="col-sm-8 tdatos">
                     <div class="row align-items-center">
                         <div class="col-sm-3">
                         <label for="id-libro" class="col-form-label">ID Libro:</label>
@@ -48,6 +106,17 @@
                         <input type="text" id="id-libro" class="form-control" placeholder="Ingresa ID Libro">
                         </div>
                     </div>
+                </div>
+                <div class="col-sm-3 bnbuscar"> <!-- BOTÓN BUSCAR--> 
+                    <div class="row aling-items-center">
+                        <button type="button" id="buscar" class="btn btn-warning">
+                            <i class="fa-solid fa-magnifying-glass" style="color: #1f4251;"></i>  Buscar
+                        </button>
+                    </div>               
+                </div>     
+            </div>
+            <div class="row align-items-center">
+                <div class="col-sm-11 tdatos">
                     <div class="row align-items-center">
                         <div class="col-sm-3">
                         <label for="titulo" class="col-form-label">Título:</label>
@@ -96,61 +165,14 @@
                     </div>
                     <div class="row align-items-center">
                         <div class="col-sm-3">
-                        <label for="fecha-publi" class="col-form-label">Fecha publicación:</label>
-                        </div>
-                        <div class="col-sm-9">
-                        <input type="date" id="fecha-publi" class="form-control" placeholder="Ingresa fecha publicación">
-                        </div>
-                    </div>
-                    <div class="row align-items-center">
-                        <div class="col-sm-3">
-                        <label for="volumen" class="col-form-label">Volumen:</label>
-                        </div>
-                        <div class="col-sm-9">
-                        <input type="number" id="volumen" class="form-control" placeholder="Ingresa volumen">
-                        </div>
-                    </div>
-                    <div class="row align-items-center">
-                        <div class="col-sm-3">
                         <label for="edicion" class="col-form-label">Edición:</label>
                         </div>
                         <div class="col-sm-9">
                         <input type="number" id="edicion" class="form-control" placeholder="Ingresa edición">
                         </div>
                     </div>
-                    <div class="row align-items-center">
-                        <div class="col-sm-3">
-                        <label for="lugar-publi" class="col-form-label">Lugar publicación:</label>
-                        </div>
-                        <div class="col-sm-9">
-                        <input type="text" id="lugar-publi" class="form-control" placeholder="Ingresa lugar publicación">
-                        </div>
-                    </div>
-                    <div class="row align-items-center">
-                        <div class="col-sm-3">
-                        <label for="lugar-publi" class="col-form-label">Foto de referencia:</label>
-                        </div>
-                        <div class="col-sm-9">
-                            <div class="row img">
-                                <img src="#" width="400px" height="500px" />
-                            </div>
-                            <div class="row">
-                                <div class="input-group mb-3">
-                                    <input type="file" class="form-control" id="inputGroupFile02">
-                                    <label class="input-group-text" for="inputGroupFile02">
-                                        <i class="fa-solid fa-upload"></i>
-                                    </label>
-                                  </div> 
-                            </div> 
-                        </div>
-                    </div>
-                    <div class="row"> <!-- BOTÓN GUARDAR-->                
-                        <button type="button" class="btn btn-warning">
-                            <i class="fa-solid fa-trash" style="color: #1f4251;"></i> Eliminar
-                        </button>
-                    </div>
                 </div>
-            </div> <!-- CIERRA DATOS LIBRO-->
+            </div>
         </div>  <!-- CIERRA CONTENIDO-->
     </div>
-</div>
+
